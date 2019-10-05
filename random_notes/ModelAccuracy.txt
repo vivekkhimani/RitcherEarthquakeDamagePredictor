@@ -1,0 +1,4 @@
+*** SOME STEPS TO IMPROVE MODEL ACCURACY AT THE END ***
+
+- Check and try to address the class imbalance issues!
+- Try encoding the FIRST THREE CATEGORICAL features which has a lot of categorical values!
