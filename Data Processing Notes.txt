@@ -1,0 +1,142 @@
+geo_level_1_id, geo_level_2_id, geo_level_3_id (type: int): 
+geographic region in which building exists, from largest (level 1) to most specific sub-region (level 3). Possible values: level 1: 0-30, level 2: 0-1427, level 3: 0-12567.
+Actions: One Hot Encoding geo_level_1_id as it is categorical data, and for geo_level_2 and level_3 leave it as it is
+
+count_floors_pre_eq (type: int): 
+number of floors in the building before the earthquake.
+No action
+
+age (type: int): age of the building in years.
+No action
+
+area_percentage (type: int): 
+normalized area of the building footprint.
+No action
+
+height_percentage (type: int): 
+normalized height of the building footprint.
+
+land_surface_condition (type: categorical): 
+surface condition of the land where the building was built. Possible values: n, o, t.
+Actions: One Hot Encoding 
+
+foundation_type (type: categorical): 
+type of foundation used while building. Possible values: h, i, r, u, w.
+Actions: One Hot Encoding
+
+roof_type (type: categorical): 
+type of roof used while building. Possible values: n, q, x.
+Actions: One Hot Encoding
+
+ground_floor_type (type: categorical): 
+type of the ground floor. Possible values: f, m, v, x, z.
+Actions: One Hot Encoding
+
+other_floor_type (type: categorical): 
+type of constructions used in higher than the ground floors (except of roof). Possible values: j, q, s, x.
+Actions: One Hot Encoding
+
+position (type: categorical): 
+position of the building. Possible values: j, o, s, t.
+Actions: One Hot Encoding
+
+plan_configuration (type: categorical): 
+building plan configuration. Possible values: a, c, d, f, m, n, o, q, s, u.
+Actions: One Hot Encoding
+
+has_superstructure_adobe_mud (type: binary): 
+flag variable that indicates if the superstructure was made of Adobe/Mud.
+No action
+
+has_superstructure_mud_mortar_stone (type: binary): 
+flag variable that indicates if the superstructure was made of Mud Mortar - Stone.
+No action
+
+has_superstructure_stone_flag (type: binary): 
+flag variable that indicates if the superstructure was made of Stone.
+No action
+
+has_superstructure_cement_mortar_stone (type: binary): 
+flag variable that indicates if the superstructure was made of Cement Mortar - Stone.
+No action
+
+has_superstructure_mud_mortar_brick (type: binary): 
+flag variable that indicates if the superstructure was made of Mud Mortar - Brick.
+No action
+
+has_superstructure_cement_mortar_brick (type: binary): 
+flag variable that indicates if the superstructure was made of Cement Mortar - Brick.
+No action
+
+has_superstructure_timber (type: binary): 
+flag variable that indicates if the superstructure was made of Timber.
+No action
+
+has_superstructure_bamboo (type: binary): 
+flag variable that indicates if the superstructure was made of Bamboo.
+No action
+
+has_superstructure_rc_non_engineered (type: binary): 
+flag variable that indicates if the superstructure was made of non-engineered reinforced concrete.
+No action
+
+has_superstructure_rc_engineered (type: binary): 
+flag variable that indicates if the superstructure was made of engineered reinforced concrete.
+No action
+
+has_superstructure_other (type: binary): 
+flag variable that indicates if the superstructure was made of any other material.
+No action
+
+legal_ownership_status (type: categorical): 
+legal ownership status of the land where building was built. Possible values: a, r, v, w.
+Actions: One Hot Encoding
+
+count_families (type: int): 
+number of families that live in the building.
+
+
+has_secondary_use (type: binary): 
+flag variable that indicates if the building was used for any secondary purpose.
+No Actions
+
+has_secondary_use_agriculture (type: binary): 
+flag variable that indicates if the building was used for agricultural purposes.
+No Actions
+
+has_secondary_use_hotel (type: binary): 
+flag variable that indicates if the building was used as a hotel.
+No Actions
+
+has_secondary_use_rental (type: binary): 
+flag variable that indicates if the building was used for rental purposes.
+No Actions
+
+has_secondary_use_institution (type: binary): 
+flag variable that indicates if the building was used as a location of any institution.
+No Actions
+
+has_secondary_use_school (type: binary):
+flag variable that indicates if the building was used as a school.
+No Actions
+
+has_secondary_use_industry (type: binary): 
+flag variable that indicates if the building was used for industrial purposes.
+No Actions
+
+has_secondary_use_health_post (type: binary): 
+flag variable that indicates if the building was used as a health post.
+No Actions
+
+has_secondary_use_gov_office (type: binary): 
+flag variable that indicates if the building was used fas a government office.
+No Actions
+
+has_secondary_use_use_police (type: binary):
+flag variable that indicates if the building was used as a police station.
+No Actions
+
+has_secondary_use_other (type: binary): 
+flag variable that indicates if the building was secondarily used for other purposes.
+No Actions
+
