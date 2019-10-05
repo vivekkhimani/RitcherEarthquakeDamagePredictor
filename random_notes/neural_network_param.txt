@@ -1,0 +1,47 @@
+*** SCIKIT LEARN MULTILAYER PERCEPTRON (MLP) PARAM NOTES AND HANDLING ***
+
+1) Hidden Layers and Units - Unknown  ---> Try to find it using GridSearchCV or RandomizedCV
+
+2) Activation Function - relu (default)
+
+3) solver - adam --- a stochastic gradient descent based optimization function for large datasets
+
+4) alpha - default
+
+5) batch_size - auto(default) ---> might play around with this in future for accuracy optimization
+
+6) learning_rate - 'invscaling' ----> starts with a constant learning rate and keeps on decreasing with each time step t based on the exponent val.
+
+7) learning_rate_init - default (may change it to improve the training speed once the number of hidden units are determined)
+
+8) power_t - default
+
+9) max_iter - default ---> may change it in future if the optimum results not obtained. should be enough most of the times.
+
+10) shuffle - true
+
+11) random_state - None (default)
+
+12) tol - default
+
+12) verbose - default
+
+13) warm_start - default
+
+14) momentum - default
+
+15) early_stopping - default ---> might change it in future to improve the training speed
+
+16) validation_fraction - N/A or default
+
+17) beta_1, beta_2 - default,default
+
+18) epsilo - default 
+
+19) n_iter_no_change - default
+
+-------------------------------------------------------
+
+THE ABOVE MENTIONED VALUES ARE ONLY TO BEGIN WITH! THE MOST IMPORTANT FACTOR FOR THE MODEL PERFORMANCE IS NUMBER OF HIDDEN LAYERS AND UNITS AND HENCE TO DETERMINE A GOOD STARTING POINT FOR THOSE, WE WILL TRY TO FIND A GOOD COMBINATION USING GRID CROSS VALIDATION AND THAN WE CAN CHANGE SOME OF THE ABOVE MENTIONED PARAMETERS TO IMPROVE TRAINING SPEED OR OTHER PARAMETERS. 
+
+------------------------------------------------------
